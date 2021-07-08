@@ -1,0 +1,152 @@
+.container{
+    display: grid;
+    height: 100vh;
+   
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: .4fr  3fr 1fr 1.5fr 1fr 1.5fr 1fr;
+    grid-template-areas: 
+    "n n n n n n"
+    "h1 h1 h1 h2 h2 h2 "
+    "m m m m m m "
+    "c1 c1 c2 c2 c3 c3 "
+    "l l l l l l "
+    "c4 c4 c5 c5 c6 c6"
+    "f1 f1 f1 f2 f2 f2";
+}
+.container img{
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+.card-img{
+    margin-left: 90px;
+}
+
+
+nav{
+    background-color: aqua;
+    grid-area: n;
+  
+
+}
+.hero1{
+    background-color: #FFFBF0;
+    grid-area: h1;
+    padding: 30px;
+    margin-left: 5px;
+    margin-top: 20px;
+   
+}
+.hero2{
+    background-color: #FFFBF0;
+    grid-area: h2;
+    margin-top: 20px;
+}
+.middle{
+    background-color: rgb(255, 255, 255);
+    grid-area: m;
+    align-items: center;
+    justify-items: center;
+    margin-left: 10PX;
+    margin-top: 10PX;
+    padding-left: 20PX;
+}
+
+.card1{
+    background-color: #ffffff;
+    
+    grid-area: c1;
+}
+.card2{
+    background-color: #ffffff;
+    grid-area: c2;
+    justify-content: center;
+}
+.card3{
+    background-color: #ffffff;
+    grid-area: c3;
+ 
+}
+.last{
+    background-color: rgb(255, 255, 255);
+    grid-area: l;
+    align-items: center;
+    justify-items: center;
+    margin-left: 10PX;
+    margin-top: 10PX;
+    padding-left: 20PX;
+    color: rgb(41, 41, 39);
+}
+.card4{
+    background-color: rgb(255, 255, 255);
+    grid-area: c4;
+
+}
+.card5{
+    background-color: rgb(255, 255, 255);
+    grid-area: c5;
+}
+.card6{
+    background-color: rgb(255, 255, 255);
+    grid-area: c6;
+}
+.footer1{
+    
+    grid-area: f1;
+}
+.footer2{
+  
+    grid-area: f2;
+    ;
+}
+@media only screen and (max-width:798px) {
+    .container{
+        grid-auto-flow: dense;
+        grid-template-columns:5fr ;
+        grid-template-rows:.4fr 3fr 3fr 1fr 1.5fr 1.5fr 1.5fr 1.5fr 1.5fr 1.5fr 1fr 2fr 2fr ;
+        grid-template-areas: 
+        "n"
+        "h1"
+        "h2"
+        "m"
+        "c1"
+        "c2"
+        "c3"
+        "l"
+        "c4"
+        "c5"
+        "c6"
+        
+        "f1"
+        "f2";
+    }
+    .hero2 img{
+        display: flex flex-colum;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .card1{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+    .card-img{
+        align-items: center;
+        margin-left: 90px;
+    }
+    
+    
+}
+.orange-text{
+    color: rgb(241, 157, 22);
+}
+.price-tag{
+    color: #FABE4C;
+}
+.footer-img{
+    width: 75%;
+    height: 50%;
+}
+
